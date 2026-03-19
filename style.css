@@ -1,0 +1,55 @@
+:root {
+    --color-primary:  rgb(32, 114, 87);
+    --color-background:rgb(12, 56, 41);
+    --color-surface-main:rgb(201, 221, 214);
+    --color-text-default: rgb(23, 27, 26);
+    --color-text-on-primary: white;
+    --color-text-on-primary-hover: rgb(231, 205, 205);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text-default);
+    background-color: var(--color-background);
+    
+}
+
+.banner {
+    padding: 0.5rem;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-on-primary);
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-link {
+    color:inherit;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    
+    &:hover {
+        color: var(--color-text-on-primary-hover);
+    }
+}
+
+main {
+    max-width: 52rem;
+    margin-inline: auto;
+    padding: 1rem;
+    background-color: var(--color-surface-main);
+   
+}
