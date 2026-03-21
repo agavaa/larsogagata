@@ -15,6 +15,7 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
+    transition: color 200ms linear;
 }
 html, body {
     margin: 0;
@@ -32,7 +33,7 @@ body {
 }
 
 .banner {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -49,7 +50,7 @@ nav {
     display: flex;
 }
 
-.logo, .nav-link {
+.banner a {
     color:inherit;
     display: block;
     text-decoration: none;
@@ -66,6 +67,7 @@ nav {
 .date-place {
     display: flex;
     gap: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -85,7 +87,7 @@ main {
     flex: 1;
     width: 52rem;
     margin-inline: auto;
-    margin-block: 1rem;
+    margin-block: 1rem 2rem;
     border-radius: 1rem;
     padding-inline: 1.5rem;
     background-color: var(--color-surface-main);
@@ -94,8 +96,10 @@ main {
 
 @media only screen and (max-width: 850px) {
     main {
+        margin-block: 0 1rem;
         width: 100%;
         padding-inline: 1rem;
+        border-radius: 0;
     }
 }
 
