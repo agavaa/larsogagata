@@ -11,11 +11,18 @@
     --color-text-default: rgb(23, 27, 26);
     --color-text-on-primary: white;
     --color-text-on-primary-hover: rgb(231, 205, 205);
+    --transition: 200ms linear;
 }
 
 *, ::before, ::after {
     box-sizing: border-box;
-    transition: color 200ms linear;
+    transition: color var(--transition), outline-offset var(--transition);
+}
+
+*:focus-visible {
+    outline: var(--color-primary) 2px solid;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--color-text-on-primary);
 }
 html, body {
     margin: 0;
@@ -105,4 +112,16 @@ main {
 
 .index-text {
     text-align: center;
+}
+
+button, .button {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-text-on-primary);
+    padding: .75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    &:hover {
+        color: var(--color-text-on-primary-hover);
+    }
 }
