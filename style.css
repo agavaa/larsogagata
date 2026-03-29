@@ -40,12 +40,17 @@ body {
 }
 
 .banner {
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem 0.5rem 0.75rem 0.5rem;
     background-color: var(--color-primary);
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     color: var(--color-text-on-primary);
+
+     @media only screen and (max-width: 450px) {
+     padding: 1rem .25rem; 
+    }
 }
 
 .logo {
@@ -64,7 +69,7 @@ nav {
 }
 
 .nav-link {
-    padding: 1rem;
+    padding: .5rem 1rem;
     
     &:hover {
         color: var(--color-text-on-primary-hover);
@@ -73,8 +78,16 @@ nav {
 
 .date-place {
     display: flex;
-    gap: 2.5rem;
-    margin-bottom: 1rem;
+    gap: .75rem;
+    
+    @media only screen and (max-width: 450px) {
+    flex-direction: column;
+    gap: .25rem; 
+    }
+}
+
+.date-place--separator {
+    border-left: 1px solid var(--color-text-on-primary);
 }
 
 h1, h2 {
