@@ -9,6 +9,7 @@
       <div id="header"></div>
       <main class="index-text">
          <h1>På tide at vi gifter oss!</h1>
+         <p id="countdown"></p>
          <a href="./RSVP.html" class="button">Si ifra om du kommer</a>
 
          <div class="main--bottom">
@@ -20,4 +21,31 @@
       </main>
    </body> 
    <script src="js/include.js"></script>
+   <script>
+      var endDate = new Date("Jun 19, 2027 16:00:00").getTime();
+      
+      var update = setInterval(function() {
+
+         const now = new Date().getTime();
+
+         const diff = endDate - now;
+         
+         const days = Math.floor(diff/(1000 * 60 * 60 * 24));
+         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+         const box = document.getElementById('countdown'); 
+
+         box.innerHTML = `${days} dager ${hours} timer ${minutes} minutter ${seconds} sekunder`;
+
+         if (diff < 0) {
+            clearInterval(update);
+            box.innerHTML = "Det er idag!"
+         }
+
+
+      }, 1000)
+   </script>
+
 </html>
