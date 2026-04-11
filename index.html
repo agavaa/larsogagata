@@ -9,7 +9,24 @@
       <div id="header"></div>
       <main class="index-text">
          <h1>På tide at vi gifter oss!</h1>
-         <p id="countdown"></p>
+         <div id="countdown">
+            <div class="countdown--card">
+               <div id="countdown--days"></div>
+               <div class="countdown--label">dager</div>
+            </div>
+            <div class="countdown--card">
+               <div id="countdown--hours"></div>
+               <div class="countdown--label">timer</div>
+            </div>
+            <div class="countdown--card">
+               <div id="countdown--minutes"></div>
+               <div class="countdown--label">minutter</div>
+            </div>
+            <div class="countdown--card">
+               <div id="countdown--seconds"></div>
+               <div class="countdown--label">sekunder</div>
+            </div>
+         </div>
          <a href="./RSVP.html" class="button">Si ifra om du kommer</a>
 
          <div class="main--bottom">
@@ -35,13 +52,21 @@
          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-         const box = document.getElementById('countdown'); 
+         const c = document.getElementById('countdown'); 
+         const cDays = document.getElementById('countdown--days'); 
+         const cHours = document.getElementById('countdown--hours'); 
+         const cMinutes = document.getElementById('countdown--minutes'); 
+         const cSeconds = document.getElementById('countdown--seconds'); 
 
-         box.innerHTML = `${days} dager ${hours} timer ${minutes} minutter ${seconds} sekunder`;
+         cDays.innerHTML = `${days}`;
+         cHours.innerHTML = `${hours}`;
+         cMinutes.innerHTML = `${minutes}`;
+         cSeconds.innerHTML = `${seconds}`;
+
 
          if (diff < 0) {
             clearInterval(update);
-            box.innerHTML = "Det er idag!"
+            c.innerHTML = "Takk for hyggelig tid sammen!"
          }
 
 
