@@ -68,6 +68,37 @@ nav {
     text-decoration: none;
 }
 
+.banner__decor {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    image-rendering: smooth;
+    text-rendering: geometricPrecision;
+    shape-rendering: geometricPrecision;
+    position: absolute;
+
+    @media only screen and (min-width: 920px) {
+        width:186px;
+        height:198px;
+    }
+
+    @media only screen and (max-width: 920px) {
+        display: none;
+    }
+    
+}
+
+.banner__decor--left {
+    left: 0;
+    top: 0;
+    rotate: 140deg;
+}
+
+.banner__decor--right {
+    right: 0;
+    top: -17px;
+    rotate: -35deg;
+}
+
 .nav-link {
     padding: .5rem 1rem;
     
@@ -136,9 +167,7 @@ main {
     justify-content: center;
     margin: 1rem;
     @media only screen and (max-width: 450px) {
-        font-size: 2rem;
-     
-           
+        font-size: 2rem;  
     }
 }
 
