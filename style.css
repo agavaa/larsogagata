@@ -26,6 +26,7 @@
 }
 html, body {
     margin: 0;
+    font-size: 18px;
 
 }
 body {
@@ -34,7 +35,6 @@ body {
     min-height: 100vh;
     background-color: var(--color-bg);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
     color: var(--color-text-default);
     
 }
@@ -88,13 +88,13 @@ nav {
 }
 
 .banner__decor--left {
-    left: 0;
+    left: 39px;
     top: 0;
     rotate: 140deg;
 }
 
 .banner__decor--right {
-    right: 0;
+    right: 39px;
     top: -17px;
     rotate: -35deg;
 }
