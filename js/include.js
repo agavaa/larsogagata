@@ -5,13 +5,6 @@ document.addEventListener('click', (e) => {
         const nav = document.getElementsByTagName('nav')[0];
         console.log(nav);
         nav.classList.toggle('showMenu');
-        
-        if(nav.classList.contains('showMenu')) {
-            navButton.innerHTML = 'Skjul meny';
-        }
-        else {
-            navButton.innerHTML = 'Vis meny';
-        }
     }
 });
 

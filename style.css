@@ -177,7 +177,8 @@ main {
     justify-content: center;
     margin: 1rem;
     @media only screen and (max-width: 450px) {
-        font-size: 2rem;  
+        font-size: 2rem; 
+        gap: 1.5rem; 
     }
 }
 
@@ -198,6 +199,14 @@ button, .button {
     text-decoration: none;
     &:hover {
         color: var(--color-text-on-primary-hover);
+    }
+    &:has(svg) {
+        display: flex;
+        gap: .25rem;
+    }
+    svg {
+        color: inherit;
+        stroke-color: inherit;
     }
 }
 
