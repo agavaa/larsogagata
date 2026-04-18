@@ -11,7 +11,12 @@ document.addEventListener('click', (e) => {
 async function loadComponent(id, file) {
     const res = await fetch(file);
     const text = await res.text();
-    document.getElementById(id).innerHTML = text;
+    
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, "text/html");
+
+    const content = doc.body.firstElementChild;
+    document.getElementById(id).appendChild(content);
 }
 
 loadComponent("header", "./components/header.html");
