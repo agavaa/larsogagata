@@ -10,25 +10,28 @@
       <div id="header"></div>
       <main class="index-text">
          <h1>På tide at vi gifter oss!</h1>
-         <div id="countdown">
+         <div class="index-content">
+            <div id="countdown">
+               <div class="countdown--card">
+                  <div id="countdown--days">-</div>
+                  <div class="countdown--label">dager</div>
+               </div>
             <div class="countdown--card">
-               <div id="countdown--days"></div>
-               <div class="countdown--label">dager</div>
-            </div>
-            <div class="countdown--card">
-               <div id="countdown--hours"></div>
+               <div id="countdown--hours">-</div>
                <div class="countdown--label">timer</div>
             </div>
             <div class="countdown--card">
-               <div id="countdown--minutes"></div>
+               <div id="countdown--minutes">-</div>
                <div class="countdown--label">minutter</div>
             </div>
             <div class="countdown--card">
-               <div id="countdown--seconds"></div>
+               <div id="countdown--seconds">-</div>
                <div class="countdown--label">sekunder</div>
             </div>
          </div>
+         <img src="images/us.jpg" class="image-us" />
          <a href="./RSVP.html" class="button">Si ifra om du kommer</a>
+      </div>
 
          <div class="main--bottom">
             <div class="img--blurred-container">
@@ -39,39 +42,5 @@
       </main>
    </body> 
    <script src="js/include.js"></script>
-   <script>
-      var endDate = new Date("Jun 19, 2027 16:00:00").getTime();
-      
-      var update = setInterval(function() {
-
-         const now = new Date().getTime();
-
-         const diff = endDate - now;
-         
-         const days = Math.floor(diff/(1000 * 60 * 60 * 24));
-         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-         const c = document.getElementById('countdown'); 
-         const cDays = document.getElementById('countdown--days'); 
-         const cHours = document.getElementById('countdown--hours'); 
-         const cMinutes = document.getElementById('countdown--minutes'); 
-         const cSeconds = document.getElementById('countdown--seconds'); 
-
-         cDays.innerHTML = `${days}`;
-         cHours.innerHTML = `${hours}`;
-         cMinutes.innerHTML = `${minutes}`;
-         cSeconds.innerHTML = `${seconds}`;
-
-
-         if (diff < 0) {
-            clearInterval(update);
-            c.innerHTML = "Takk for hyggelig tid sammen!"
-         }
-
-
-      }, 1000)
-   </script>
-
+   <script src="js/countdown.js"></script>
 </html>
