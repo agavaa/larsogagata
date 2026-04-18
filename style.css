@@ -186,8 +186,13 @@ main {
 }
 
 .image-us {
-    max-width: 30rem;
+    width: 540px;
     align-self: center;
+    @media only screen and (max-width: 560px) {
+        width: 100%;
+        margin-inline: -1rem;
+    }
+
 }
 
 #countdown {
