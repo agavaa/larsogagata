@@ -55,17 +55,36 @@ body {
 
 .logo {
     font-size: 3rem;
-
+    
 }
 
 nav {
     display: flex;
+    @media only screen and (max-width: 540px) {
+        display: none; 
+        flex-direction: column;
+    }
+}
+
+nav.showMenu {
+    display: flex;
+}
+
+#nav-button {
+    @media only screen and (min-width: 540px) {
+        display: none; 
+    }
+
 }
 
 .banner a {
     color:inherit;
     display: block;
     text-decoration: none;
+    
+    &:hover {
+        color: var(--color-text-on-primary-hover);
+    }
 }
 
 .banner__decor {
@@ -101,20 +120,12 @@ nav {
 
 .nav-link {
     padding: .5rem 1rem;
-    
-    &:hover {
-        color: var(--color-text-on-primary-hover);
-    }
 }
 
 .date-place {
     display: flex;
     gap: .75rem;
-    
-    @media only screen and (max-width: 450px) {
-    flex-direction: column;
-    gap: .25rem; 
-    }
+    font-size: .875rem;
 }
 
 .date-place--separator {
@@ -147,12 +158,11 @@ main {
     padding-inline: 1.5rem;
     background-color: var(--color-surface-main);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    @media only screen and (max-width: 850px) {
-     
-            margin-block: 0 1rem;
-            width: 100%;
-            padding-inline: 1rem;
-            border-radius: 0;
+    @media only screen and (max-width: 940px) {
+        margin-block: 0 1rem;
+        width: 100%;
+        padding-inline: 1rem;
+        border-radius: 0;
     }
 }
 
@@ -177,9 +187,12 @@ main {
 }
 
 button, .button {
+    cursor: pointer;
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
     color: var(--color-text-on-primary);
+    font-family: inherit;
+    font-size: 1rem;
     padding: .75rem;
     border-radius: 4px;
     text-decoration: none;
@@ -199,9 +212,9 @@ button, .button {
     margin-block-end: 2rem;
     margin-inline-start: 50%;
     transform: translate(-50%);
-    width: 400px;   
+    width: 500px;   
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 500px) {
      width: 100%;   
     }
 }
