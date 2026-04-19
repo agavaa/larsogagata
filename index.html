@@ -37,10 +37,22 @@
                   <div class="countdown--label">sekunder</div>
                </div>
             </div>
-            <img src="images/us.jpg" class="image-us" />
-            <label for="updates">Jeg vil få oppdateringer på epost</label>
-            <input id="updates" />
-            <button>Send inn</button>
+            <img src="images/us.jpg" class="image-us" alt="Agata og Lars" />
+            <form
+               action="https://buttondown.com/api/emails/embed-subscribe/largehendrix"
+               method="post"
+            >
+               <h2>
+                  Følg med på oppdateringer rundt brylluppet
+               </h2>
+
+               <div class="newsletter-form-group">
+                  
+                  <label for="bd-email">Epostadresse</label>
+                  <input type="email" name="email" id="bd-email" />
+                  <button type="submit">Abonner</button>
+               </div>
+            </form>
       </div>
 
          <div class="main--bottom">

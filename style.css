@@ -209,7 +209,7 @@ main {
 
 .countdown--label {
     font-size: 1rem;
-
+    
 }
 
 button, .button {
@@ -234,6 +234,29 @@ button, .button {
         color: inherit;
         stroke-color: inherit;
     }
+}
+
+.newsletter-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;;
+    margin-top: 1rem;
+    margin-inline: auto;
+    
+    @media only screen and (min-width: 500px) {
+        width: 20rem;
+    }
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .75rem;
+
 }
 
 .qr-container {
