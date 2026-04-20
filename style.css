@@ -16,7 +16,7 @@
     --color-text-on-primary-hover: rgb(231, 205, 205);
     --color-text-on-surface-action-hover: rgb(231, 205, 205);
     --transition: 200ms linear;
-    --border-radius-component: 4px;
+    --border-radius-component: 6px;
 }
 
 *, ::before, ::after {
@@ -256,6 +256,8 @@ input {
     font-family: inherit;
     font-size: 1rem;
     padding: .75rem;
+    border-radius: var(--border-radius-component);
+    border: 1px solid var(--color-surface-action);
 
 }
 
@@ -270,6 +272,7 @@ input {
     border-radius: var(--border-radius-component);
     padding: 1rem;
     max-width: 20rem;
+    margin-block-start: 1rem;
 
     img {
         width: 100%;
