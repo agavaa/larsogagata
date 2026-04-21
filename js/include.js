@@ -1,9 +1,7 @@
 document.addEventListener('click', (e) => {
-    if (e.target.id === 'nav-button') {
-        const navButton = e.target;
-        console.log('test');
-        const nav = document.getElementsByTagName('nav')[0];
-        console.log(nav);
+     const navButton = e.target.closest('#nav-button');
+    if (navButton) {
+        const nav = document.querySelector('nav');
         nav.classList.toggle('showMenu');
     }
 });
