@@ -69,7 +69,7 @@ body {
 
 nav {
     display: flex;
-    @media only screen and (max-width: 540px) {
+    @media only screen and (max-width: 690px) {
         display: none; 
         flex-direction: column;
     }
@@ -80,7 +80,7 @@ nav.showMenu {
 }
 
 #nav-button {
-    @media only screen and (min-width: 540px) {
+    @media only screen and (min-width: 690px) {
         display: none; 
     }
 
@@ -103,13 +103,10 @@ nav.showMenu {
     text-rendering: geometricPrecision;
     shape-rendering: geometricPrecision;
     position: absolute;
+    width:186px;
+    height:198px;
 
-    @media only screen and (min-width: 920px) {
-        width:186px;
-        height:198px;
-    }
-
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 1160px) {
         display: none;
     }
     
@@ -219,7 +216,7 @@ button, .button {
     color: var(--color-text-on-surface-action);
     font-family: inherit;
     font-size: 1rem;
-    padding: .75rem;
+    padding: .5rem;
     border-radius: var(--border-radius-component);
     text-decoration: none;
     &:hover {
@@ -255,7 +252,7 @@ label {
 input {
     font-family: inherit;
     font-size: 1rem;
-    padding: .75rem;
+    padding: .5rem;
     border-radius: var(--border-radius-component);
     border: 1px solid var(--color-surface-action);
 

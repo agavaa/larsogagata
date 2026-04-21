@@ -9,7 +9,7 @@
         <div class="date-place--separator"></div>
         <span><a href="https://flottenforsamlingshus.no/">Flotten, Trondheim</a></span>
     </div>
-    <a class="logo" href="./index.html">
+    <a class="logo" href="./index.html" data-i18n="larsAndAgata">
         Lars og Agata
     </a>
     <button id="nav-button">
@@ -18,15 +18,21 @@
             <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        Meny
+        <span data-i18n="menu">
+            Meny
+        </span>
     </button>
-    <!-- <button id="nav-button">☰ Meny</button> -->
     <nav>
-        <a class="nav-link" href="./praktisk.html">Praktisk</a>
-        <a class="nav-link" href="./RSVP.html">RSVP</a>
-        <a class="nav-link" href="./registry.html" >Ønskeliste</a>
-        <a class="nav-link" href="./on-the-day.html">På dagen</a>
-        <a class="nav-link" href="./photos.html">Bilder</a>
+        <div>
+            <button onclick="setLang('no')">NO</button>
+            |
+            <button onclick="setLang('pl')">PL</button> 
+        </div>
+        <a class="nav-link" href="./praktisk.html" data-i18n="info">Praktisk</a>
+        <a class="nav-link" href="./RSVP.html" data-i18n="rsvp">RSVP</a>
+        <a class="nav-link" href="./registry.html" data-i18n="registry">Ønskeliste</a>
+        <a class="nav-link" href="./program.html" data-i18n="program">Program</a>
+        <a class="nav-link" href="./photos.html" data-i18n="photos">Bilder</a>
     </nav>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 2812 2986" class="banner__decor banner__decor--right" aria-hidden="true">
         <g>
