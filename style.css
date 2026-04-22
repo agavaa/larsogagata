@@ -233,6 +233,10 @@ button, .button {
     }
 }
 
+nav button {
+    padding-inline: .75rem;
+}
+
 .newsletter-form-group {
     display: flex;
     flex-direction: column;
