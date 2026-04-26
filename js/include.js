@@ -20,7 +20,6 @@ async function loadComponent(id, file) {
 loadComponent("header", "./components/header.html");
 
 async function loadLang(lang) {
-    // if(lang === 'no') return;
 
     const res = await fetch(`/lang/${lang}.json`);
     const data = await res.json();
@@ -29,6 +28,19 @@ async function loadLang(lang) {
         const key = el.getAttribute('data-i18n');
         el.innerHTML = data[key];
     })
+
+    const activeClass = 'lang-button--active';
+
+    const langButtons = document.querySelectorAll('[id^="lang-button-"]');
+
+    langButtons.forEach(b => {
+        if(b.id === `lang-button-${lang}`) {
+            b.setAttribute('aria-checked', 'true');
+        }
+        else b.setAttribute('aria-checked', 'false');
+    })
+
+    document.documentElement.lang = lang;
 }
 
 const savedLang = localStorage.getItem('lang') || 'no';

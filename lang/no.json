@@ -1,6 +1,7 @@
 {
     "larsAndAgata": "Lars og Agata",
     "menu": "Meny",
+    "language": "Språk",
     "rsvp": "RSVP",
     "info": "Praktisk",
     "photos": "Bilder",
@@ -25,6 +26,6 @@
     "accomodationP1": "Vi jobber med å få på plass en felles avtale på hotell for gjester som kommer langveisfra. Mer informasjon om dette vil bli delt så snart det er klart.",
     "access": "Adkomst",
     "accessP1": "<a href=\"https://flottenforsamlingshus.no/\">Flotten</a> ligger på Tiller, ca 12km fra Trondheim sentrum.",
-    "accessP2": "Vi vil organisere buss fra hotellet til festen. Nærmere informasjon vil bli gitt fortløpende i <a href=\"program.html\">På dagen</a>. Det er også parkering på stedet.",
+    "accessP2": "Vi vil organisere buss fra hotellet til festen. Nærmere informasjon vil bli gitt fortløpende i <a href=\"program.html\">Program</a>. Det er også parkering på stedet.",
     "photosP1": "Etter bryllupet kan du finne og legge til egne bilder her:"
 }

@@ -23,10 +23,11 @@
         </span>
     </button>
     <nav>
-        <div>
-            <button onclick="setLang('no')">NO</button>
+        <div role="radiogroup" aria-labelledby="lang-control-label">
+            <span id="lang-control-label" class="sr-only" data-i18n="language"></span>
+            <button role="radio" id="lang-button-no" onclick="setLang('no')">NO</button>
             |
-            <button onclick="setLang('pl')">PL</button> 
+            <button role="radio" id="lang-button-pl" onclick="setLang('pl')">PL</button> 
         </div>
         <a class="nav-link" href="./praktisk.html" data-i18n="info">Praktisk</a>
         <a class="nav-link" href="./RSVP.html" data-i18n="rsvp">RSVP</a>
