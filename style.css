@@ -256,7 +256,7 @@ nav button {
     margin-top: 1rem;
     margin-inline: auto;
     
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 600px) {
         width: 30rem;
     }
 }
