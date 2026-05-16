@@ -1,5 +1,4 @@
 {
-    "larsAndAgata": "Lars og Agata",
     "menu": "Meny",
     "language": "Språk",
     "rsvp": "RSVP",
@@ -7,6 +6,11 @@
     "photos": "Bilder",
     "program": "Program",
     "registry": "Ønskeliste",
+    "rsvpTitle": "RSVP | Lars & Agata",
+    "infoTitle": "Praktisk | Lars & Agata",
+    "photosTitle": "Bilder | Lars & Agata",
+    "programTitle": "Program | Lars & Agata",
+    "registryTitle": "Ønskeliste | Lars & Agata",
     "itsTime": "På tide at vi gifter oss!",
     "follow": "Følg med på oppdateringer rundt brylluppet",
     "notifications": "Vi sender ut notifikasjoner når det kommer mer informasjon på nettsiden.",
