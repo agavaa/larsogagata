@@ -30,7 +30,7 @@ a {
 html, body {
     margin: 0;
     font-size: 18px;
-
+    
 }
 body {
     display: flex;
@@ -50,9 +50,9 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--color-text-on-primary);
-
-     @media only screen and (max-width: 450px) {
-     padding: 1rem .25rem; 
+    
+    @media only screen and (max-width: 450px) {
+        padding: 1rem .25rem; 
     }
 }
 
@@ -82,7 +82,7 @@ nav.showMenu {
     @media only screen and (min-width: 690px) {
         display: none; 
     }
-
+    
 }
 
 .banner a {
@@ -104,7 +104,7 @@ nav.showMenu {
     position: absolute;
     width:186px;
     height:198px;
-
+    
     @media only screen and (max-width: 1160px) {
         display: none;
     }
@@ -187,15 +187,15 @@ main {
     --s: 50px; /* the size on the corner */
     border: 3px solid var(--color-primary);
     mask:
-        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-        0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-        linear-gradient(#000 0 0) content-box;
-
+    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+    0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+    
     @media only screen and (max-width: 560px) {
         width: 100%;
         
     }
-
+    
 }
 
 #countdown {
@@ -278,13 +278,18 @@ input {
     padding: 1rem;
     max-width: 20rem;
     margin-block-start: 1rem;
-
+    
     img {
         width: 100%;
     }
     a {
         font-size: 1.5rem;
     }
+}
+
+.account-info {
+    margin-inline: auto;
+    margin-block-start: 1rem;
 }
 
 .main--bottom {
