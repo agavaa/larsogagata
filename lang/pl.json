@@ -33,5 +33,8 @@
   "access": "Dojazd",
   "accessP1": "<a href=\"https://flottenforsamlingshus.no/\">Flotten</a> znajduje się w Tiller, około 12 km od centrum Trondheim.",
   "accessP2": "Zorganizujemy transport autobusem z hotelu na miejsce przyjęcia. Więcej informacji będzie dostępnych na bieżąco w sekcji <a href=\"program.html\">Program</a>. Na miejscu dostępny jest również parking.",
-  "photosP1": "Po ślubie możesz tutaj znaleźć zdjęcia i dodać własne:"
+  "photosP1": "Po ślubie możesz tutaj znaleźć zdjęcia i dodać własne:",
+  "rsvpP1": "<b>Uwaga!</b> Jeśli jesteś zaproszony/zaproszona z osobą towarzyszącą każdy musi wypełnić formularz z osobna.",
+  "rsvpComing": "<a href=\"https://nx100993.your-storageshare.de/apps/forms/s/qF3FYPLPWon8a5XAcDfFJWok\">Pojawię się</a>",
+  "rsvpNotComing": "<a href=\"https://nx100993.your-storageshare.de/apps/forms/s/yfqn93Mc7HCAE6EQFqiPxFXg\">Nie pojawię się</a>"
 }

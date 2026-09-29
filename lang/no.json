@@ -33,5 +33,8 @@
     "access": "Adkomst",
     "accessP1": "<a href=\"https://flottenforsamlingshus.no/\">Flotten</a> ligger på Tiller, ca 12km fra Trondheim sentrum.",
     "accessP2": "Vi vil organisere buss fra hotellet til festen. Nærmere informasjon vil bli gitt fortløpende i <a href=\"program.html\">Program</a>. Det er også parkering på stedet.",
-    "photosP1": "Etter bryllupet kan du finne og legge til egne bilder her:"
+    "photosP1": "Etter bryllupet kan du finne og legge til egne bilder her:",
+    "rsvpP1": "<b>OBS!</b> Hvis du er invitert med følge må skjema fylles ut per person.",
+    "rsvpComing": "<a href=\"https://nx100993.your-storageshare.de/apps/forms/embed/7gs3YL85WjQ3WZwmMySeqysc\">Jeg kommer</a>",
+    "rsvpNotComing": " <a href=\"https://nx100993.your-storageshare.de/apps/forms/s/eK5YEyDkAHDt5cLaY3RaN8kx\">Jeg kommer ikke</a>"
 }
