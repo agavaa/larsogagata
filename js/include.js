@@ -29,8 +29,6 @@ async function loadLang(lang) {
         el.innerHTML = data[key];
     })
 
-    const activeClass = 'lang-button--active';
-
     const langButtons = document.querySelectorAll('[id^="lang-button-"]');
 
     langButtons.forEach(b => {
@@ -46,10 +44,19 @@ async function loadLang(lang) {
 const savedLang = localStorage.getItem('lang') || 'no';
 
 loadLang(savedLang);
+setRsvpQRCode(savedLang);
 
 function setLang(lang) {
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
     loadLang(lang);
+    setRsvpQRCode(lang);
 
+}
+
+function setRsvpQRCode(lang) {
+    const qrComing = document.getElementById('qr-coming');
+    qrComing.setAttribute('src', `images/qr-code-rsvp-coming-${lang}.png`)
+    const qrNotComing = document.getElementById('qr-not-coming');
+    qrNotComing.setAttribute('src', `images/qr-code-rsvp-not-coming-${lang}.png`)
 }
