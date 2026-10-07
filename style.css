@@ -280,9 +280,6 @@ input {
     }
 }
 
-.qr-container__row a {
-    font-size: clamp(1.125rem, 1.03rem + 0.32vw, 1.5rem);
-}
 
 .qr-container {
     display: flex;
@@ -304,6 +301,10 @@ input {
     a {
         font-size: 1.5rem;
     }
+}
+
+.qr-container__row a {
+    font-size: clamp(1.125rem, 1.03rem + 0.32vw, 1.5rem);
 }
 
 .account-info {
