@@ -266,6 +266,24 @@ input {
     border: 1px solid var(--color-surface-action);
 }
 
+.qr-container__row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 450px) {
+        gap: .5rem;
+        .qr-container {
+            padding-inline: .75rem;
+        }
+    }
+}
+
+.qr-container__row a {
+    font-size: clamp(1.125rem, 1.03rem + 0.32vw, 1.5rem);
+}
+
 .qr-container {
     display: flex;
     flex-direction: column;
@@ -276,23 +294,15 @@ input {
     background-color: white;
     border-radius: var(--border-radius-component);
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 15rem;
     margin-block-start: 1rem;
+    text-align: center;
     
     img {
         width: 100%;
     }
     a {
         font-size: 1.5rem;
-    }
-}
-
-.qr-container__row {
-    display: flex;
-    gap: 1rem;
-
-    @media only screen and (max-width: 510px) {
-        flex-direction: column;
     }
 }
 
